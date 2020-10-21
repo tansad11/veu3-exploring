@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ScoreCounter name="Bob"/>
+  <ScoreCounter name="Carol"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import ScoreCounter from './components/ScoreCounter';  
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components : {
+    ScoreCounter,
   }
 }
+
+
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  font-size: 3rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
